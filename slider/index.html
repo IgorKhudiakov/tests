@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Слайдер картинок</title>
+    <link rel="stylesheet" href="/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="5787" class="slider">
+        <!-- data-теги могут быть заполнены сервером -->
+        <div class="slider-categories">
+            <div class="category active" data-id="0">Парклеты</div>
+            <div class="category" data-id="1">Подиумы</div>
+            <div class="category" data-id="2">Качели</div>
+        </div>
+        <div class="slider-body">
+            <div class="slider-images">
+                <img src="/images/0/0.jpg" title="Парклеты" data-id="0" data-src-0="/images/0/0.jpg" data-src-1="/images/1/0.png" data-src-2="/images/2/0.png" data-art="25984159" data-art-0="25984159" data-title-1="84265197" data-art-2="15736249"/>
+                <img class="center" src="/images/0/1.png" title="Парклеты" data-id="1" data-src-0="/images/0/1.png" data-src-1="/images/1/1.png" data-src-2="/images/2/1.png" data-art="19374528" data-art-0="19374528" data-art-1="39152864" data-art-2="28491573"/>
+                <img src="/images/0/2.png" title="Парклеты" data-id="2" data-src-0="/images/0/2.png" data-src-1="/images/1/2.png" data-src-2="/images/2/2.png" data-art="52673948" data-art-0="52673948" data-art-1="67289431" data-art-2="93512876"/>
+            </div>
+            <div class="slider-nav">
+              <div class="arrows">
+                <div class="slider-btn" onclick="slide('5787', 'left')"><img title="right" src="/images/arrow-left.png"></div>
+                <div class="slider-btn" onclick="slide('5787', 'right')"><img title="left" src="/images/arrow-right.png"></div>
+              </div>
+            </div>
+        </div>
+        <div class="slider-image-info">
+            <span class="article">19374528</span>
+        </div>
+    </div>
+    <script src="/slider.js"></script>
+  </body>
+</html>
