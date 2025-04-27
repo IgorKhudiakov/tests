@@ -1,0 +1,53 @@
+<script src="converter.js"></script>
+<script src="counter.js"></script>
+
+<div class="info-block">
+  <div>
+    <label for="inpt">Введите число</label>
+    <input id="inpt" type="text" value="">
+    <span class="button" onClick="getResult()">Конвертировать</span>
+    <span class="button" onClick="getCount()">Подсчитать</span>
+  </div>
+  <div><span>Результат:</span><span id="output">0</span></div>
+</div>
+
+<style>
+  :root {
+    background: #1b252f;
+    color: #ccc;
+  }
+
+  .info-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    padding: 3em;
+  }
+  .info-block > div {
+    display: flex;
+    gap: 1em;
+  }
+
+  .button {
+    border-radius: 1em;
+    background-color: #00dd55;
+    border: none;
+    padding: 0.5em;
+    color: white;
+  }
+</style>
+
+<script>
+    function getResult() {
+        var data = document.querySelector('input').value
+        document.querySelector('#output').innerHTML = converter(data)
+    }
+
+    function getCount() {
+        var data = document.querySelector('input').value
+        document.querySelector('#output').innerHTML = getSymbolsCount(data, 2)
+    }
+</script>
